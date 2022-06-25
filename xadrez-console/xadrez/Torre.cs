@@ -21,7 +21,7 @@ namespace xadrez
 
         public override bool[,] movimentosPossiveis()
         {
-            bool[,] mat = new bool[tab.linhas, tab.colunas];
+            bool[,] mat = new bool[tab.linhas, tab.colunas];// acho que e isso
 
             Posicao pos = new Posicao(0, 0);
 
@@ -75,8 +75,8 @@ namespace xadrez
                 pos.coluna = pos.coluna - 1;
 
             }
+            return mat;//o mapa de jogadas possiveis so ta true na 1,2 mas se vc jogar la por exemplo, c4 ela vai eu acho
 
-            return mat;
 
         }
         
