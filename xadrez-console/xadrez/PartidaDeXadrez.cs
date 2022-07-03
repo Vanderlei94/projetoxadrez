@@ -81,7 +81,7 @@ namespace xadrez
 
         public void validarPosicaoDeDestino(Posicao origem, Posicao destino)
         {
-            if (!tab.peca(origem).podeMoverPara(destino))// puts era ai ainda ficou algo errado, não deu o erro de posição inválida
+            if (!tab.peca(origem).movimentoPossivel(destino))// puts era ai ainda ficou algo errado, não deu o erro de posição inválida
             {
                 throw new TabuleiroException("Posição de destino inválida!");
             }
